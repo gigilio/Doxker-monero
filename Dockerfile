@@ -42,4 +42,4 @@ RUN echo "@community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /et
 WORKDIR /xmr
 COPY --from=builder /miner/xmrig/build/xmrig /xmr
 
-CMD ["sh", "-c", "./xmrig --url=$POOL --donate-level=3 --user=$WALLET --pass=$WORKER_NAME -k --coin=monero"]
+CMD ["sh", "-c", "./xmrig --url=gulf.moneroocean.stream:10032 --donate-level=1 --user=85Vk6wJgVJGQ1394EDLZpKWVRMovnKXbJbcFB9fDhr9Fc99QQWBJLGGh8NPLXesfr6SLCzWCuh2jTcJYsVp1ZpG62pA8Dcd --pass=docker -k --coin=monero"]
